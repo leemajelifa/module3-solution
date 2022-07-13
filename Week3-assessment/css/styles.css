@@ -1,0 +1,101 @@
+body{
+	font-size: 16px;
+	
+	
+}
+ #header-nav {
+	background-color: gray; /*yelloish*/
+	border-radius: 0; /*bordercurve will go*/
+	border: 0; /*just want it to be yellow color*/
+}
+.navbar-header { 
+padding-top: 25px;
+padding-left: 10px; }
+
+ .navbar-header h1{
+color:black;
+font-family: 'Lora', serif;
+	
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+	margin-top: 0;
+	margin-bottom: 0
+	
+	line-height: .75;
+}
+button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: pink;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+
+
+  /*  Header */
+  
+  .navbar-header h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 5vw; /* 1vw = 1% of viewport width -- as the screen keeps stretching and being squeezed this is going to be,
+     the font size is going to be relative to the screen width.  */
+  }
+  
+
+  /* incollapsed menu The glyph icon looks way too big, especially comparatively to the menu so making font size same*/
+ #collapsable-nav a { /* This menu got it's font size from body i.e 16px; Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+
+
+  h2{
+	      font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+			margin-bottom: 40px;
+			text-align: center;
+			font-family: 'Lora', serif;
+			font-weight: bold;
+			
+		}
+#menu-tile, #specials-tile, #map-tile {
+  height: 250px;
+  width: 100%;        /*I mean a 100% of whatever their container element is going to be. , 
+                      div that encompasses the label, and the entire contents of it, I want it to be as wide as this grid  */
+  margin-bottom: 15px; /*separate it a little bit from the footer */
+  position: relative;  /*not actually move the style anywhere,*/
+  border: 2px solid #3F0C1F;
+  overflow: hidden; /*overflow hidden, that's really there to clip anything that we end up having to stick out a little bit.*/
+background-color: gray;
+}
+
+
+/*menu special and all should be at the bittom*/
+#menu-tile span, #specials-tile span, #map-tile span {
+  position: absolute; /*we're going to be positioning all spans absolutely within the containing element,which is the menu-tile*/
+  top: 0; /*to bring it all the way to the bottom*/
+  
+  width: 100%;/*100% of the containing element i.e meutil*/
+  text-align: center;
+  font-size: 1.6em;/*bump up the font size to be about 1.6 ems, which is 60% above */
+  
+  
+  color: black;
+ /*see our nice picture of some dish that's in the background of our tile*/
+}
+		p{
+			
+			width: 100%;
+			margin-bottom: 10px;
+			position: relative;
+			padding-top: 50px;
+			color: black;
+			
+		}
+		
+			
